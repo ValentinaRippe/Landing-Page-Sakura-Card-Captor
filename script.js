@@ -41,3 +41,16 @@ if (cambiar.innerHTML=="Ver Cartas")
    cambiar.innerHTML = "Ver menos";
 else cambiar.innerHTML= "Ver Cartas";
 } 
+function vermas4() {
+  const htmlShow = document.getElementById("VerPoderes");
+if (htmlShow.style.display === "none") {
+  htmlShow.style.display = "block";
+}
+ else {
+  htmlShow.style.display = "none";
+}
+ const cambiar = document.getElementById("vermas4");
+if (cambiar.innerHTML=="Ver mas...")
+   cambiar.innerHTML = "Ver menos";
+else cambiar.innerHTML= "Ver mas...";
+} 

@@ -1,7 +1,4 @@
-main{
-    display: flex;
-    flex-direction: column;
-}
+
 /*Header*/
 #header{
    position: fixed;
@@ -61,7 +58,7 @@ background: rgba(22, 69, 118, 0.9); ;
 }
 /*Estilo cuando el mouse pasa encima de cada link del menu*/
 li:hover {
-   filter: opacity(.);
+   filter: opacity(.6);
    transition:all .5s ease-in-out;
 }
 /* Estilo del boton cuando el menú está expandido*/
@@ -69,7 +66,7 @@ li:hover {
 ul{
    position:absolute;
    display: none;
-   left: 7rem;
+   right: 0.5rem;
 }
 input:checked  ~ ul{
    display:block;
@@ -92,6 +89,8 @@ a{
    text-align: center;
    text-decoration-line: underline;
    color: #f8b0b0;
+   
+   
 }               
   /*Header*/
   /*Inicio*/
@@ -104,12 +103,13 @@ a{
  }
  #frase{
    display: flex;
-   width: 21.563rem;
+   width: 100%;
    height: auto;
    z-index: 100;
    margin-top: 0rem;
-   padding-top: 1ç3rem;
-   padding-bottom: 1rem;
+   margin-bottom: 2.4rem;
+   padding-top: 1rem;
+   padding-bottom:0.5rem;
    background-color: rgba(0, 0, 0, 0.6);
    border-radius: 15px;
    font-family: Reem Kufi;
@@ -118,6 +118,12 @@ a{
    text-align: center;
    color: #FFFFFF;
    text-shadow: 7px 9px 6px rgba(0, 0, 0, 0.46);
+ }
+ #frase3{
+    display: none;
+ }
+ #Sakuras{
+    display: none;
  }
  #fondo1{
    display: flex;
@@ -136,17 +142,25 @@ background-size: cover;
 background-repeat: repeat-x;
 background: url(img/simbolo.png), #164576;
  }*/
+ main{
+   display: flex;
+   flex-direction: column;
+}
  body{
    background-repeat: repeat-y;  
    background: url(img/fondo2.png);
  }
+ /* body{
+   background-repeat: repeat-y;  
+   background: url(img/Rectangle4.png);
+ } */
 #rect1{    
    width: 100%;
    height: auto;
-   margin-top: 3rem;
+   margin-top: 2.5rem;
    margin-left: 0.1rem;
    margin-bottom: 2rem;
-   padding-bottom: 0rem;
+   padding-bottom: 2rem;
    background: rgba(191, 45, 50, 0.51);
 }
 #imgkero1{   
@@ -170,7 +184,7 @@ background: url(img/simbolo.png), #164576;
 }
 #parrafo1{ 
    width: 100%;
-   height: 749px;
+   height: auto;
    margin-top: -0.5rem;
    font-family: Reem Kufi;
    font-style: normal;
@@ -222,8 +236,6 @@ box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.6);
  }
  #parrafo2{ 
    width: 100%;
-   top:-7rem;
-   margin: 0%;
    font-family: Reem Kufi;
    font-size: 24px;
    line-height: 36px;
@@ -251,7 +263,8 @@ box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.6);
    left: 2rem;
    flex-direction: row;
    align-items: center;
-   margin: 0;
+   margin-left: 2rem;
+   margin-top: 1rem;
    padding: 0;
    width: 17.5rem;
    background: rgba(191, 45, 50, 0.51);
@@ -289,16 +302,15 @@ tr{
  /*Inicio Cartas Clow*/
  #rect3{
     margin-top: rem;
-    width: 21.313rem;
+    width:100%;
     height: auto;
     margin-left: 0.1rem;
     margin-bottom: 2rem;
-    padding-bottom: 7rem;
+    padding-bottom: 2rem;
     background: rgba(191, 45, 50, 0.51);
  }
  #CartasClowT{
     width: 210px;
-    top: -12rem;
     margin-top: -7rem;
     margin-left: 7rem;
     font-family: Reem Kufi;
@@ -320,8 +332,7 @@ tr{
  #Parrafo3{
     
     width: 100%;
-    top:-8rem;
-    margin: 0%;
+    margin-bottom: 0rem;
     font-family: Reem Kufi;
     font-size: 24px;
     line-height: 36px;
@@ -340,7 +351,7 @@ tr{
     color: #FFFFFF;
     padding: 0.4rem 2rem;
     margin-left: 4.3rem;
-    top: -6rem;
+    margin-top: 1rem;
     }
 #VerCartasC{
     display: none;  
@@ -348,17 +359,19 @@ tr{
 #ImgCartasClow{
     
     width: 20rem;
-    margin-top: -7rem;
+    margin-top: 1rem;
     margin-left: 0.6rem;
-    margin-bottom: 7rem;
+    margin-bottom: 0rem;
 }
 /* Fin Cartas Clow */
 /* Inicio Cartas Sakura */
 #rect4{
     
-    width: 21.313rem;
+    width: 100%;
     height: auto;
-    margin-top: 1rem;
+    margin-left: 0.1rem;
+    margin-bottom: 2rem;
+    padding-bottom: 2rem;
     background: rgba(191, 45, 50, 0.51);
     
     
@@ -366,8 +379,8 @@ tr{
  #CartasSakuraT{
     
     width: 210px;
-    top: -12rem;
-    margin: 0;
+    margin-top: -7rem;
+    margin-left: 7rem;
     font-family: Reem Kufi;
     font-style: normal;
     font-weight: normal;
@@ -378,17 +391,15 @@ tr{
     text-shadow: 0px 4px 8px rgba(0, 0, 0, 0.8);
  }
  #imgKero4{
-   
-    width: 127px;
-    height: 181px;
-    left: 172px;
-    top: -43px;
+   width: 127px;
+   height: 181px;
+   margin-top: -3rem;
+   margin-left: 2rem;
     
  }
  #Parrafo4{
     
     width: 100%;
-    top:-8rem;
     margin: 0%;
     font-family: Reem Kufi;
     font-size: 24px;
@@ -409,7 +420,7 @@ tr{
     color: #FFFFFF;
     padding: 0.4rem 2rem;
     margin-left: 4.3rem;
-    top: -6rem;
+    margin-top: 1rem;
     }
 #VerCartasS{
     display: none;  
@@ -417,27 +428,26 @@ tr{
 #ImgCartasSakura{
     
     width: 20rem;
-    margin-top: -7rem;
+    margin-top: 1rem;
     margin-left: 0.6rem;
-    margin-bottom: 7rem;
+    margin-bottom: 0rem;
 }
 /* Fin Cartas Sakura */
-/* inicio Poderes */
+/* inicio Personajes */
 #rect5{
    
-    width: 21.313rem;
-    min-height: calc(100vh - 100px);
-    align-content: flex-end;
-    margin-left: 0.3rem;
-    
+    width: 100%;
+    height: auto;
+    margin-left: 0.1rem;
+    margin-bottom: 2rem;
+    padding-bottom: 2rem;
     background: rgba(191, 45, 50, 0.51);
  }
  #PersonajesT{
     
     width: 210px;
-    top: -5rem;
-    left: 8rem;
-    margin: 0;
+    margin-top: -4.5rem;
+    margin-left: 8rem;
     font-family: Reem Kufi;
     font-style: normal;
     font-weight: normal;
@@ -448,22 +458,1038 @@ tr{
     text-shadow: 0px 4px 8px rgba(0, 0, 0, 0.8);
  }
  #imgKero5{
-    
-    width: 147px;
-    height: 111px;
-    left: 1px;
-    top: -23px;
-    
+    width: 180px;
+   margin-top: -3rem;
+   margin-left: 0rem;
  }
  #Parrafo5{
    
     width: 100%;
-    top:-3rem;
-    margin: 0%;
     font-family: Reem Kufi;
     font-size: 24px;
     line-height: 36px;
     text-align: center;
-    
     color: #FFFFFF;
  }
+.FPersonajes{
+    position: relative;
+   font-family: Reem Kufi;
+   font-size: 24px;
+   line-height: 25px;
+   color: white;
+   text-align: center;
+   width:50%;
+ }
+ .CirculoPS{
+   width: 140px;
+   height: 140px;
+   -moz-border-radius: 50%;
+   -webkit-border-radius: 50%;
+   border-radius: 50%;
+   background-color: rgba(191, 45, 50, 0.51);
+   background-image:url(img/Sakura2.png);
+   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+   background-size: 10rem;
+   margin-top: rem;
+   margin-left: 1.5rem;  
+ }
+ .S{
+   width: 100%;
+   margin-top: 1rem;
+   margin-bottom: -4rem;
+   margin-left: 0.5rem;
+   text-shadow: 0px 4px 8px rgba(0, 0, 0, 0.8);
+ }
+ .CirculoPK{
+   width: 140px;
+   height: 140px;
+   -moz-border-radius: 50%;
+   -webkit-border-radius: 50%;
+   border-radius: 50%;
+   background-color: rgba(191, 45, 50, 0.51);
+   background-image:url(img/Kero3.png);
+   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+   background-size: 20rem;
+   background-position: -12rem 0.5rem;
+   background-repeat: no-repeat;
+   margin-top: -9rem;
+   margin-left: 11rem; 
+ }
+.K{
+   width: 100%;
+   margin-top: 1rem;
+   margin-bottom: rem;   
+   margin-left: 10rem;
+   text-shadow: 0px 4px 8px rgba(0, 0, 0, 0.8);
+ } 
+ .CirculoPL{
+   width: 140px;
+   height: 140px;
+   -moz-border-radius: 50%;
+   -webkit-border-radius: 50%;
+   border-radius: 50%;
+   background-color: rgba(191, 45, 50, 0.51);
+   background-image:url(img/Syaoran.png);
+   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+   background-size: 15rem;
+   background-position: -3rem 0.5rem;
+   background-repeat: no-repeat;
+   margin-top: -1rem;
+   margin-left: 1.5rem; 
+ }
+ .L{
+   width: 100%;
+   margin-top:rem;
+   margin-bottom: rem;
+   margin-left: rem;
+   text-shadow: 0px 4px 8px rgba(0, 0, 0, 0.8);
+ }
+ .CirculoPT{
+   width: 140px;
+   height: 140px;
+   -moz-border-radius: 50%;
+   -webkit-border-radius: 50%;
+   border-radius: 50%;
+   background-color: rgba(191, 45, 50, 0.51);
+   background-image:url(img/Tomoyo.png);
+   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+   background-size: 15rem;
+   background-position: -3rem -1rem;
+   background-repeat: no-repeat;
+   margin-top: -8.5rem;
+   margin-left: 11rem; 
+ }
+ .T{
+   width: 100%;
+   margin-top:-4rem;
+   margin-bottom: rem;
+   margin-left:10rem;
+   text-shadow: 0px 4px 8px rgba(0, 0, 0, 0.8);
+ }
+.CirculoPC{
+  width: 140px;
+  height: 140px;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  background-color: rgba(191, 45, 50, 0.51);
+  background-image:url(img/Cerberus.png);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+  background-size: 7rem;
+  background-position: 1rem 0.5rem;
+  background-repeat: no-repeat;
+  margin-top: 1rem;
+  margin-left: 1.5rem; 
+}
+.C{
+  width: 100%;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  margin-left: 0.5rem;
+  text-shadow: 0px 4px 8px rgba(0, 0, 0, 0.8);
+}
+.CirculoPTO{
+  width: 140px;
+  height: 140px;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  background-color: rgba(191, 45, 50, 0.51);
+  background-image:url(img/Toya.png);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+  background-size: 13rem;
+  background-position: -2rem -1rem;
+  background-repeat: no-repeat;
+  margin-top: -9rem;
+  margin-left: 11rem; 
+}
+.To{
+   width: 100%;
+  margin-top:-3rem;
+  margin-bottom: 0rem;
+  margin-left: 10rem;
+  margin-right: 0rem;
+  text-shadow: 0px 4px 8px rgba(0, 0, 0, 0.8);
+}
+.CirculoPY{
+   width: 140px;
+   height: 140px;
+   -moz-border-radius: 50%;
+   -webkit-border-radius: 50%;
+   border-radius: 50%;
+   background-color: rgba(191, 45, 50, 0.51);
+   background-image:url(img/Yukito.jpg);
+   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+   background-size: 9rem;
+   background-position: 0rem 0rem;
+   background-repeat: no-repeat;
+   margin-top: 1rem;
+   margin-left: 1.5rem; 
+ }
+ .Y{
+   width: 100%;
+   margin-top: 2rem;
+   margin-bottom: 1rem;
+   margin-left: 0.5rem;
+   text-shadow: 0px 4px 8px rgba(0, 0, 0, 0.8);
+ }
+ .CirculoPYu{
+   width: 140px;
+   height: 140px;
+   -moz-border-radius: 50%;
+   -webkit-border-radius: 50%;
+   border-radius: 50%;
+   background-color: rgba(191, 45, 50, 0.51);
+   background-image:url(img/Yue.png);
+   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+   background-size: 10rem;
+   background-position: 0rem -1rem;
+   background-repeat: no-repeat;
+   margin-top: -9rem;
+   margin-left: 11rem; 
+ }
+ .Yu{
+   margin-top:-2.5rem;
+   margin-bottom: 0rem;
+   margin-left: 14rem;
+   text-shadow: 0px 4px 8px rgba(0, 0, 0, 0.8);
+ }
+ /* Fin Personajes */
+ /* inicio Poderes*/
+ .verMas{
+   font-family: Reem Kufi;
+   font-style: normal;
+   background: #164576;
+   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.6);
+   font-size: 30px;
+   line-height: 45px;
+   text-align: center;
+   color: #FFFFFF;
+   padding: 0.4rem 2rem;
+   margin-top: 0.5rem;
+   margin-left: 5rem;
+}
+#VerPoderes{
+   display: none; 
+   font-family: Reem Kufi;
+   font-size: 24px;
+   line-height: 36px;
+   text-align: center;
+   color: #FFFFFF;  
+   width: 100%;
+   margin-top: 1rem;
+ }
+#PoderesT{
+   width: 210px;
+    margin-top: -6rem;
+    margin-left: 8rem;
+    font-family: Reem Kufi;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 40px;
+    line-height: 35px;
+    text-align: center;  
+    color: #FFFFFF;
+    text-shadow: 0px 4px 8px rgba(0, 0, 0, 0.8); 
+}
+#Parrafo6{ 
+   width: 100%;
+   margin-top: 3rem;
+   font-family: Reem Kufi;
+   font-size: 24px;
+   line-height: 36px;
+   text-align: center;      
+   color: #FFFFFF;
+}
+#imgKero6{
+   width: 127px;
+   height: 181px;
+   margin-top: -3rem;
+   margin-left: 2rem;
+   
+}
+/*Fin Poderes*/
+/*Inicio Anime/Manga*/
+#Parrafo7{
+   width: 100%;
+   margin-top: 3rem;
+   font-family: Reem Kufi;
+   font-size: 24px;
+   line-height: 36px;
+   text-align: center;      
+   color: #FFFFFF;
+}
+#MangaT{
+   width: 210px;
+   margin-left: 4rem;
+   font-family: Reem Kufi;
+   font-style: normal;
+   font-weight: normal;
+   font-size: 40px;
+   line-height: 35px;
+   text-align: center;  
+   color: #FFFFFF;
+   text-shadow: 0px 4px 8px rgba(0, 0, 0, 0.8); 
+}
+#Parrafo8{
+   width: 100%;
+   margin-top: 3rem;
+   font-family: Reem Kufi;
+   font-size: 24px;
+   line-height: 36px;
+   text-align: center;      
+   color: #FFFFFF;
+}
+/*Fin Anime/Manga*/
+#footer{
+   width: 100%;
+   height: 141px;
+   margin-bottom: -5px;
+   background: rgba(0, 0, 0, 0.46);
+   justify-content: space-between;
+}
+.Enlaces{
+   display: none;
+}
+#Fondo{
+   display: none;
+}
+#frase2{
+   display: none;
+}
+@media screen and (min-width:800px){
+   main{
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      margin: 0rem;
+  }
+   .Enlaces{
+   display: flex;
+   margin-left: -70%;
+   margin-top: -0.1rem;
+   }
+   a{
+      padding: 1rem;
+      font-size:120%;
+      color: white;
+      text-decoration: none;
+      text-shadow: 0px 4px 8px rgba(0, 0, 0, 0.8);
+   }
+   #header{
+      position: fixed;
+      left: 0;
+      top: 0;
+      width: 100%;
+       
+   }
+   #recta{
+      width: 100%;
+      height: 65px;
+   }
+   #logo{
+      width: 14rem;
+      height: 6rem;
+      left: 15%;
+      top: -2rem;
+   }
+   #simbolo{
+      width: 50rem;
+      height: 50rem;
+      margin-left: 30rem;
+      margin-top: -12rem;
+
+   }
+   /*Bonton menu*/
+   #menu{
+      width: 46px;
+      height: 32px;
+      margin-top: 1.2rem;
+      margin-right: 1rem;
+      z-index: 7;
+      display: none;
+      
+   }
+   label menu {
+      box-sizing: border-box;
+      width: 46px;
+      height: 32px;
+      line-height: 30px;
+      font-weight: bold;
+      text-align: center;
+      user-select: none;
+      display: none;
+   }
+   ul{
+      position:absolute;
+      display: none;
+      right: 0.5rem;
+   }   
+                  
+     /*Header*/
+     /*Inicio*/
+   #sakura1{
+      display: flex;
+      width: 650px;
+      height: 542px;
+      margin-top: -34.5rem;
+      margin-left: 40rem;
+      z-index: 100;
+      
+    }
+   #frase{
+      display: none;
+   }
+   #Rectangulo{
+      width: 100%;
+      margin-top: -25rem;
+      margin-bottom: 2.4rem;
+      background-color: rgba(0, 0, 0, 0.6);
+      border-radius: 15px;
+      height: auto;
+
+   }
+    #frase2{
+      display: flex;
+      width: 45%;
+      padding-top: 3rem;
+      padding-left: 4rem;
+      padding-bottom: -2rem;
+      font-family: Reem Kufi;
+      font-size: 36px;
+      line-height: 45px;
+      text-align: center;
+      -webkit-text-stroke: 1px #B07070;
+      color: #FFFFFF;
+      text-shadow: 7px 9px 6px rgba(0, 0, 0, 0.46);
+    }
+    #frase3{
+      display: flex;
+      width: 50%;
+      margin-top: -1rem;
+      padding-left: 14rem;
+      padding-bottom: 3rem;
+      font-family: Reem Kufi;
+      font-size: 64px;
+      line-height: 45px;
+      text-align: center;
+      -webkit-text-stroke: 1px #B07070;
+      color: #FFFFFF;
+      text-shadow: 7px 9px 6px rgba(0, 0, 0, 0.46);
+    }
+    #Sakuras{
+       display: flex;
+       width: 30%;
+       margin-top: -30rem;
+    }
+    #fondo1{
+      display: none;
+    }
+    #Fondo{
+       display: flex;
+       width: 100%;
+       height: 34.875rem;
+       margin-left: rem;
+       margin-top: 3.3rem;
+    }
+    /*inicio*/
+    /*sinopsis*/
+   
+    /*#fondo2{  
+   background-size: cover;
+   background-repeat: repeat-x;
+   background: url(img/simbolo.png), #164576;
+    }*/
+   
+    body{
+      background-repeat: repeat-y;  
+      background: url(img/fondo2.png);
+      width: 100%;
+    }
+   #rect1{    
+      width: 100%;
+      height: auto;
+      margin-top: 2.5rem;
+      margin-left: 0.1rem;
+      margin-bottom: 2rem;
+      padding-bottom: 2rem;
+      background: rgba(191, 45, 50, 0.51);
+   }
+   #imgkero1{   
+      width: 147px;
+      height: 111px;
+      margin-top: -1rem;
+   }
+   #sinopsist{   
+      width: 231px;
+      height: 50px;
+      margin-top:-5rem;
+      margin-left: 7rem;
+      font-family: Reem Kufi;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 40px;
+      line-height: 60px;
+      text-align: center;
+      color: #FFFFFF;
+      text-shadow: 0px 4px 8px rgba(0, 0, 0, 0.8);
+   }
+   #parrafo1{ 
+      width: 100%;
+      height: auto;
+      margin-top: -0.5rem;
+      font-family: Reem Kufi;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 20px;
+      line-height: 25px;
+      text-align: center; 
+      color: #FFFFFF;
+   }
+   /* #vermas{
+       position: absolute;
+       width: 222px;
+       height: 58px;
+       left: 59px;
+       top: 804px;
+   background: #164576;
+   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.6);
+   } */
+    /*sinopsis*/
+    /*cartas*/
+    /* inicio Lista cartas*/
+    #rect2{  
+      width: 100%;
+      height: 100%;
+      margin-left: 0.1rem;
+      margin-bottom: 2rem;
+      padding-bottom: 2rem;
+      background: rgba(191, 45, 50, 0.51);
+    }
+    #imgkero2{
+      width: 127px;
+      height: 181px;
+      margin-top: -3rem;
+      margin-left: 2rem;
+    }
+    #cartasT{   
+      width: 231px;
+      height: 64.86px;
+      margin-top: -7rem;
+      margin-left: 7rem;
+      font-family: Reem Kufi;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 40px;
+      line-height: 60px;
+      text-align: center; 
+      color: #FFFFFF; 
+      text-shadow: 0px 4px 8px rgba(0, 0, 0, 0.8);
+    }
+    #parrafo2{ 
+      width: 100%;
+      font-family: Reem Kufi;
+      font-size: 24px;
+      line-height: 36px;
+      text-align: center; 
+      color: #FFFFFF;
+    }
+   
+   .verlistat{
+      font-family: Reem Kufi;
+      font-style: normal;
+      background: #164576;
+      box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.6);
+      font-size: 30px;
+      line-height: 45px;
+      text-align: center;
+      color: #FFFFFF;
+      padding: 0.4rem 2rem;
+      margin-top: 0.5rem;
+      margin-left: 5rem;
+   
+   }
+   #verlista{
+      display: none;
+      top: -6rem;
+      left: 2rem;
+      flex-direction: row;
+      align-items: center;
+      margin-left: 2rem;
+      margin-top: 1rem;
+      padding: 0;
+      width: 17.5rem;
+      background: rgba(191, 45, 50, 0.51);
+      box-shadow: 0px 4px 6px #000000;
+   }
+   td{
+      font-family: Reem Kufi;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 4vh;
+      line-height: 1.5rem;
+      border-bottom: 1px solid black;
+      text-align: center;
+      color: #FFFFFF;
+   }
+   tr{
+      font-family: Reem Kufi;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 1.5rem;
+      line-height: 2.5rem;
+      text-align: center;
+      color: #000000;
+      height: 3rem;
+   }
+   .tituloTabla{
+       border-bottom: 1px solid #000000;
+       height: 3rem;
+       width: 8.75rem;
+       text-align: center;
+       margin: -4px;
+       box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.25);
+   }
+    /*Fin Lista cartas*/
+    /*Inicio Cartas Clow*/
+    #rect3{
+       margin-top: rem;
+       width:100%;
+       height: auto;
+       margin-left: 0.1rem;
+       margin-bottom: 2rem;
+       padding-bottom: 2rem;
+       background: rgba(191, 45, 50, 0.51);
+    }
+    #CartasClowT{
+       width: 210px;
+       margin-top: -7rem;
+       margin-left: 7rem;
+       font-family: Reem Kufi;
+       font-style: normal;
+       font-weight: normal;
+       font-size: 40px;
+       line-height: 35px;
+       text-align: center;  
+       color: #FFFFFF;
+       text-shadow: 0px 4px 8px rgba(0, 0, 0, 0.8);
+    }
+    #imgKero3{
+      width: 127px;
+      height: 181px;
+      margin-top: -3rem;
+      margin-left: 2rem;
+       
+    }
+    #Parrafo3{
+       
+       width: 100%;
+       margin-bottom: 0rem;
+       font-family: Reem Kufi;
+       font-size: 24px;
+       line-height: 36px;
+       text-align: center;
+       
+       color: #FFFFFF;
+    }
+    .verCartasTC{
+       font-family: Reem Kufi;
+       font-style: normal;
+       background: #164576;
+       box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.6);
+       font-size: 30px;
+       line-height: 45px;
+       text-align: center;
+       color: #FFFFFF;
+       padding: 0.4rem 2rem;
+       margin-left: 4.3rem;
+       margin-top: 1rem;
+       }
+   #VerCartasC{
+       display: none;  
+           }
+   #ImgCartasClow{
+       
+       width: 20rem;
+       margin-top: 1rem;
+       margin-left: 0.6rem;
+       margin-bottom: 0rem;
+   }
+   /* Fin Cartas Clow */
+   /* Inicio Cartas Sakura */
+   #rect4{
+       
+       width: 100%;
+       height: auto;
+       margin-left: 0.1rem;
+       margin-bottom: 2rem;
+       padding-bottom: 2rem;
+       background: rgba(191, 45, 50, 0.51);
+       
+       
+    }
+    #CartasSakuraT{
+       
+       width: 210px;
+       margin-top: -7rem;
+       margin-left: 7rem;
+       font-family: Reem Kufi;
+       font-style: normal;
+       font-weight: normal;
+       font-size: 40px;
+       line-height: 35px;
+       text-align: center;  
+       color: #FFFFFF;
+       text-shadow: 0px 4px 8px rgba(0, 0, 0, 0.8);
+    }
+    #imgKero4{
+      width: 127px;
+      height: 181px;
+      margin-top: -3rem;
+      margin-left: 2rem;
+       
+    }
+    #Parrafo4{
+       
+       width: 100%;
+       margin: 0%;
+       font-family: Reem Kufi;
+       font-size: 24px;
+       line-height: 36px;
+       text-align: center;
+       
+       color: #FFFFFF;
+    }
+    .verCartasTS{
+       
+       font-family: Reem Kufi;
+       font-style: normal;
+       background: #164576;
+       box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.6);
+       font-size: 30px;
+       line-height: 45px;
+       text-align: center;
+       color: #FFFFFF;
+       padding: 0.4rem 2rem;
+       margin-left: 4.3rem;
+       margin-top: 1rem;
+       }
+   #VerCartasS{
+       display: none;  
+           }
+   #ImgCartasSakura{
+       
+       width: 20rem;
+       margin-top: 1rem;
+       margin-left: 0.6rem;
+       margin-bottom: 0rem;
+   }
+   /* Fin Cartas Sakura */
+   /* inicio Personajes */
+   #rect5{
+      
+       width: 100%;
+       height: auto;
+       margin-left: 0.1rem;
+       margin-bottom: 2rem;
+       padding-bottom: 2rem;
+       background: rgba(191, 45, 50, 0.51);
+    }
+    #PersonajesT{
+       
+       width: 210px;
+       margin-top: -4.5rem;
+       margin-left: 8rem;
+       font-family: Reem Kufi;
+       font-style: normal;
+       font-weight: normal;
+       font-size: 40px;
+       line-height: 35px;
+       text-align: center;  
+       color: #FFFFFF;
+       text-shadow: 0px 4px 8px rgba(0, 0, 0, 0.8);
+    }
+    #imgKero5{
+       width: 180px;
+      margin-top: -3rem;
+      margin-left: 0rem;
+    }
+    #Parrafo5{
+      
+       width: 100%;
+       font-family: Reem Kufi;
+       font-size: 24px;
+       line-height: 36px;
+       text-align: center;
+       color: #FFFFFF;
+    }
+   .FPersonajes{
+       position: relative;
+      font-family: Reem Kufi;
+      font-size: 24px;
+      line-height: 25px;
+      color: white;
+      text-align: center;
+      width:50%;
+    }
+    .CirculoPS{
+      width: 140px;
+      height: 140px;
+      -moz-border-radius: 50%;
+      -webkit-border-radius: 50%;
+      border-radius: 50%;
+      background-color: rgba(191, 45, 50, 0.51);
+      background-image:url(img/Sakura2.png);
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+      background-size: 10rem;
+      margin-top: rem;
+      margin-left: 1.5rem;  
+    }
+    .S{
+      width: 100%;
+      margin-top: 1rem;
+      margin-bottom: -4rem;
+      margin-left: 0.5rem;
+      text-shadow: 0px 4px 8px rgba(0, 0, 0, 0.8);
+    }
+    .CirculoPK{
+      width: 140px;
+      height: 140px;
+      -moz-border-radius: 50%;
+      -webkit-border-radius: 50%;
+      border-radius: 50%;
+      background-color: rgba(191, 45, 50, 0.51);
+      background-image:url(img/Kero3.png);
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+      background-size: 20rem;
+      background-position: -12rem 0.5rem;
+      background-repeat: no-repeat;
+      margin-top: -9rem;
+      margin-left: 11rem; 
+    }
+   .K{
+      width: 100%;
+      margin-top: 1rem;
+      margin-bottom: rem;   
+      margin-left: 10rem;
+      text-shadow: 0px 4px 8px rgba(0, 0, 0, 0.8);
+    } 
+    .CirculoPL{
+      width: 140px;
+      height: 140px;
+      -moz-border-radius: 50%;
+      -webkit-border-radius: 50%;
+      border-radius: 50%;
+      background-color: rgba(191, 45, 50, 0.51);
+      background-image:url(img/Syaoran.png);
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+      background-size: 15rem;
+      background-position: -3rem 0.5rem;
+      background-repeat: no-repeat;
+      margin-top: -1rem;
+      margin-left: 1.5rem; 
+    }
+    .L{
+      width: 100%;
+      margin-top:rem;
+      margin-bottom: rem;
+      margin-left: rem;
+      text-shadow: 0px 4px 8px rgba(0, 0, 0, 0.8);
+    }
+    .CirculoPT{
+      width: 140px;
+      height: 140px;
+      -moz-border-radius: 50%;
+      -webkit-border-radius: 50%;
+      border-radius: 50%;
+      background-color: rgba(191, 45, 50, 0.51);
+      background-image:url(img/Tomoyo.png);
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+      background-size: 15rem;
+      background-position: -3rem -1rem;
+      background-repeat: no-repeat;
+      margin-top: -8.5rem;
+      margin-left: 11rem; 
+    }
+    .T{
+      width: 100%;
+      margin-top:-4rem;
+      margin-bottom: rem;
+      margin-left:10rem;
+      text-shadow: 0px 4px 8px rgba(0, 0, 0, 0.8);
+    }
+   .CirculoPC{
+     width: 140px;
+     height: 140px;
+     -moz-border-radius: 50%;
+     -webkit-border-radius: 50%;
+     border-radius: 50%;
+     background-color: rgba(191, 45, 50, 0.51);
+     background-image:url(img/Cerberus.png);
+     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+     background-size: 7rem;
+     background-position: 1rem 0.5rem;
+     background-repeat: no-repeat;
+     margin-top: 1rem;
+     margin-left: 1.5rem; 
+   }
+   .C{
+     width: 100%;
+     margin-top: 1rem;
+     margin-bottom: 1rem;
+     margin-left: 0.5rem;
+     text-shadow: 0px 4px 8px rgba(0, 0, 0, 0.8);
+   }
+   .CirculoPTO{
+     width: 140px;
+     height: 140px;
+     -moz-border-radius: 50%;
+     -webkit-border-radius: 50%;
+     border-radius: 50%;
+     background-color: rgba(191, 45, 50, 0.51);
+     background-image:url(img/Toya.png);
+     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+     background-size: 13rem;
+     background-position: -2rem -1rem;
+     background-repeat: no-repeat;
+     margin-top: -9rem;
+     margin-left: 11rem; 
+   }
+   .To{
+      width: 100%;
+     margin-top:-3rem;
+     margin-bottom: 0rem;
+     margin-left: 10rem;
+     margin-right: 0rem;
+     text-shadow: 0px 4px 8px rgba(0, 0, 0, 0.8);
+   }
+   .CirculoPY{
+      width: 140px;
+      height: 140px;
+      -moz-border-radius: 50%;
+      -webkit-border-radius: 50%;
+      border-radius: 50%;
+      background-color: rgba(191, 45, 50, 0.51);
+      background-image:url(img/Yukito.jpg);
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+      background-size: 9rem;
+      background-position: 0rem 0rem;
+      background-repeat: no-repeat;
+      margin-top: 1rem;
+      margin-left: 1.5rem; 
+    }
+    .Y{
+      width: 100%;
+      margin-top: 2rem;
+      margin-bottom: 1rem;
+      margin-left: 0.5rem;
+      text-shadow: 0px 4px 8px rgba(0, 0, 0, 0.8);
+    }
+    .CirculoPYu{
+      width: 140px;
+      height: 140px;
+      -moz-border-radius: 50%;
+      -webkit-border-radius: 50%;
+      border-radius: 50%;
+      background-color: rgba(191, 45, 50, 0.51);
+      background-image:url(img/Yue.png);
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+      background-size: 10rem;
+      background-position: 0rem -1rem;
+      background-repeat: no-repeat;
+      margin-top: -9rem;
+      margin-left: 11rem; 
+    }
+    .Yu{
+      margin-top:-2.5rem;
+      margin-bottom: 0rem;
+      margin-left: 14rem;
+      text-shadow: 0px 4px 8px rgba(0, 0, 0, 0.8);
+    }
+    /* Fin Personajes */
+    /* inicio Poderes*/
+    .verMas{
+      font-family: Reem Kufi;
+      font-style: normal;
+      background: #164576;
+      box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.6);
+      font-size: 30px;
+      line-height: 45px;
+      text-align: center;
+      color: #FFFFFF;
+      padding: 0.4rem 2rem;
+      margin-top: 0.5rem;
+      margin-left: 5rem;
+   }
+   #VerPoderes{
+      display: none; 
+      font-family: Reem Kufi;
+      font-size: 24px;
+      line-height: 36px;
+      text-align: center;
+      color: #FFFFFF;  
+      width: 100%;
+      margin-top: 1rem;
+    }
+   #PoderesT{
+      width: 210px;
+       margin-top: -6rem;
+       margin-left: 8rem;
+       font-family: Reem Kufi;
+       font-style: normal;
+       font-weight: normal;
+       font-size: 40px;
+       line-height: 35px;
+       text-align: center;  
+       color: #FFFFFF;
+       text-shadow: 0px 4px 8px rgba(0, 0, 0, 0.8); 
+   }
+   #Parrafo6{ 
+      width: 100%;
+      margin-top: 3rem;
+      font-family: Reem Kufi;
+      font-size: 24px;
+      line-height: 36px;
+      text-align: center;      
+      color: #FFFFFF;
+   }
+   #imgKero6{
+      width: 127px;
+      height: 181px;
+      margin-top: -3rem;
+      margin-left: 2rem;
+      
+   }
+   /*Fin Poderes*/
+   /*Inicio Anime/Manga*/
+   #Parrafo7{
+      width: 100%;
+      margin-top: 3rem;
+      font-family: Reem Kufi;
+      font-size: 24px;
+      line-height: 36px;
+      text-align: center;      
+      color: #FFFFFF;
+   }
+   #MangaT{
+      width: 210px;
+      margin-left: 4rem;
+      font-family: Reem Kufi;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 40px;
+      line-height: 35px;
+      text-align: center;  
+      color: #FFFFFF;
+      text-shadow: 0px 4px 8px rgba(0, 0, 0, 0.8); 
+   }
+   #Parrafo8{
+      width: 100%;
+      margin-top: 3rem;
+      font-family: Reem Kufi;
+      font-size: 24px;
+      line-height: 36px;
+      text-align: center;      
+      color: #FFFFFF;
+   }
+}
