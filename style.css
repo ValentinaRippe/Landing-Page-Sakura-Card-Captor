@@ -1377,7 +1377,6 @@ margin-bottom: 1rem;
     /* inicio Poderes*/
      .verMas{
       font-family: Reem Kufi;
-      font-style: normal;
       background: #164576;
       border: none;
       font-size: 30px;
@@ -1440,8 +1439,6 @@ margin-bottom: 1rem;
       margin-left: auto;
       margin-right: auto;
       font-family: Reem Kufi;
-      font-style: normal;
-      font-weight: normal;
       font-size: 20px;
       line-height: 35px;
       text-align: justify, center; 
@@ -1449,7 +1446,6 @@ margin-bottom: 1rem;
    }
    .verMas7{
       font-family: Reem Kufi;
-      font-style: normal;
       background: #164576;
       border: none;
       box-shadow: 0px 7px 30px #000000;
@@ -1479,8 +1475,6 @@ margin-bottom: 1rem;
       margin-left: auto;
       margin-right: auto;
       font-family: Reem Kufi;
-      font-style: normal;
-      font-weight: normal;
       font-size: 20px;
       line-height: 35px;
       text-align: justify, center; 
@@ -1503,7 +1497,6 @@ margin-bottom: 1rem;
       margin-top: 2rem;
    }
    #Fparrafo{
-   justify-content: space-between;
    width: 30%;
    margin-right: auto;
    margin-left: auto;
